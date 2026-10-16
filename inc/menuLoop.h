@@ -60,6 +60,12 @@ int menuLoop(void) {
 			case XUI_KEY8:
 				encrypt_menu();
 				break;
+			case XUI_KEYFUNC:
+				PrintLogo();
+				break;
+			case XUI_KEY9:
+				PrintTest();
+				break;
 			case XUI_KEYCANCEL:
 				OsLog(LOG_DEBUG, "[menuLoop] EXIT APP >>> ");
 				destroyMenuButtons();
